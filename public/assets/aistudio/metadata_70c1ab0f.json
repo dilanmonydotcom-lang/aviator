@@ -1,0 +1,6 @@
+{
+  "name": "DroidVault — Android App Hub",
+  "description": "Android APK upload, showcase, and direct download portal with member accounts and admin studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

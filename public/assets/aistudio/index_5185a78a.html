@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23059669'/%3E%3Cpath d='M32 14L48 42H38L32 31L26 42H16L32 14Z' fill='white'/%3E%3C/svg%3E"
+    />
+    <title>DroidVault — Android App Hub</title>
+    <meta name="description" content="Android APK upload, showcase, and direct download portal with member accounts and admin studio." />
+    <meta property="og:title" content="DroidVault — Android App Hub" />
+    <meta property="og:description" content="Android APK upload, showcase, and direct download portal with member accounts and admin studio." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Sinhala:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script data-gh-pages-redirect>
+      (function () {
+        var loc = window.location;
+        if (loc.hostname.endsWith('.github.io')) {
+          loc.replace('./docs/' + loc.search + loc.hash);
+          return;
+        }
+        if (loc.protocol === 'file:') {
+          var isArchiveTemp = /rar\$|rartemp|appdata[\\/]+local[\\/]+temp/i.test(decodeURIComponent(loc.href));
+          if (!isArchiveTemp) {
+            loc.replace('./docs/index.html' + loc.hash);
+            return;
+          }
+          var root = document.getElementById('root');
+          if (root) {
+            root.innerHTML =
+              '<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:#f8fafc;font-family:system-ui,-apple-system,sans-serif;color:#0f172a;">' +
+              '<div style="max-width:520px;width:100%;background:#ffffff;border:1px solid #e2e8f0;border-radius:16px;padding:28px;box-shadow:0 10px 30px rgba(15,23,42,0.06);">' +
+              '<div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">' +
+              '<div style="width:40px;height:40px;border-radius:10px;background:#059669;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;">D</div>' +
+              '<div><div style="font-weight:700;font-size:18px;">DroidVault — Extract ZIP First</div><div style="font-size:13px;color:#64748b;">ZIP file එක Extract කරලා open කරන්න</div></div>' +
+              '</div>' +
+              '<p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 14px;">You opened <code>index.html</code> directly inside WinRAR / ZIP preview, so the app files were not unpacked.</p>' +
+              '<ol style="font-size:14px;line-height:1.7;color:#334155;padding-left:20px;margin:0 0 20px;">' +
+              '<li>Right-click the downloaded ZIP file and click <strong>Extract All...</strong> (ZIP එක folder එකකට Extract කරන්න).</li>' +
+              '<li>Open the extracted folder, go into <strong>docs</strong>, and double-click <strong>index.html</strong>.</li>' +
+              '</ol>' +
+              '<a href="./docs/index.html" style="display:inline-block;background:#059669;color:#ffffff;text-decoration:none;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;">Open docs/index.html</a>' +
+              '</div></div>';
+          }
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
